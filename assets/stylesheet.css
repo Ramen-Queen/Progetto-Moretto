@@ -24,7 +24,7 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-/*background landing*/
+
 .landing{
     position: relative;
     size: 100vh 100vw;
@@ -34,7 +34,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-
 }
 
 .presentation{
@@ -51,14 +50,13 @@ body {
     font-size: 6vh;
 }
 .presentation H1{
-    font-family: 'Montserrat';
+    font-family: 'Righteous';
     font-size: 10vh;
-    margin-bottom: 0%;
     position: relative;
     color: #f5f5f5;
 }
 .typewriter{
-    font-family: 'Poppins-light', sans-serif;
+    font-family: 'Lexend Deca';
     color: #F98B88;
     font-size: 6vh;
     text-decoration: none;
@@ -98,13 +96,13 @@ body {
     position: relative;
     width: 100%;
     height: fit-content;
+    padding-top: 10%;
     padding-bottom: 10%;
 }
 .aboutMe h1{
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 10vh;
-    padding-top: 5vh;
     padding-bottom: 5vh;
 }
 
