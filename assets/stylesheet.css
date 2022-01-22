@@ -18,7 +18,7 @@ font-family: 'Righteous', cursive;
 }
 
 body {
-    background-color: #2c2c2c;
+    background-color: #102542;
     color: #f5f5f5;
     margin: 0px;
     height: 100%;
@@ -69,8 +69,8 @@ body {
     right: 0%;
 }
 #spaceman{
-    width: 40vw;
-    position:absolute;
+    width: 25vw;
+    position: absolute;
     perspective: 10px;
     transform: scaleX(-1);
     animation-name: fluctuate;
@@ -79,31 +79,31 @@ body {
     animation-iteration-count: infinite;
 }
 @keyframes fluctuate{
-    0%      {right:20px; top:50px}
-    50%     {right: 30px; top:100px}
-    100%    {right:20px; top:50px}
+    0%      {right:100px; top:120px}
+    50%     {right: 80px; top:170px}
+    100%    {right:100px; top:120px}
 }
 
 #arrow{
     transform: scaleX(-1);
     width: 10vw;
     position: relative;
-    top: 18vh;
-    left: 10vw;
+    top: 16vh;
+    left: 12vw;
 }
 
 .aboutMe{
     position: relative;
     width: 100%;
     height: fit-content;
-    padding-top: 10%;
     padding-bottom: 10%;
 }
 .aboutMe h1{
     text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Righteous';
     font-size: 10vh;
-    padding-bottom: 5vh;
+    padding-top: 10%;
+    padding-bottom: 10vh;
 }
 
 .shortly{
@@ -134,41 +134,57 @@ a:hover {
 
 
 .whatIdo{
-    background-color: #000000;
     height: auto;
 }
 .whatIdo .title{
     text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
     font-size: 7vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    font-family: 'Righteous';
 }
-.whatIdo h1{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: xx-large;
-}
-.whatIdo p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
-}
+
 .AVStuff{
     display: inline-block;
-    background-color: #3b0808;
-    padding: 5%;
+    vertical-align: middle;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .AVtxt{
-    position: relative;
     width: 50%;
+    position: absolute;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .AVtxt h1{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Righteous';
     font-size: xx-large;
+   /* padding-top: 20%;*/
 }
+.AVtxt p {
+    font-family: 'Lexend Deca';
+    font-size: x-large;
+}
+.AVimg{
+    position: relative;
+    width: 50%;
+    float: right;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.carousel-item img{
+
+}
+
+
 .webD{
     position: relative;
     display: inline-block;
-    background-color: #083b08;
+    vertical-align: middle;
+    height: 75vh;
 }
 
 .WDtxt{
@@ -177,10 +193,18 @@ a:hover {
     float: right;
     padding-left:5%;
     padding-top: 10%;
+    
 }
 .WDtxt h1{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Righteous';
     font-size: xx-large;
+   /* padding-top: 20%;*/
+   vertical-align: middle;
+}
+.WDtxt p {
+    font-family: 'Lexend Deca';
+    font-size: x-large;
+    vertical-align: middle;
 }
 .webDslide{
     position: relative;
@@ -192,61 +216,6 @@ a:hover {
 width: inherit;
 }
 
-
-
-/* CSS *//*
-.button-53 {
-    background-color: #3DD1E7;
-    border: 0 solid #E5E7EB;
-    box-sizing: border-box;
-    color: #000000;
-    display: flex;
-    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 700;
-    justify-content: center;
-    line-height: 1.75rem;
-    padding: .75rem 1.65rem;
-    position: relative;
-    text-align: center;
-    text-decoration: none #000000 solid;
-    text-decoration-thickness: auto;
-    width: 100%;
-    max-width: 460px;
-    position: relative;
-    cursor: pointer;
-    transform: rotate(-2deg);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button-53:focus {
-    outline: 0;
-  }
-  
-  .button-53:after {
-    content: '';
-    position: absolute;
-    border: 1px solid #000000;
-    bottom: 4px;
-    left: 4px;
-    width: calc(100% - 1px);
-    height: calc(100% - 1px);
-  }
-  
-  .button-53:hover:after {
-    bottom: 2px;
-    left: 2px;
-  }
-  
-  @media (min-width: 768px) {
-    .button-53 {
-      padding: .75rem 3rem;
-      font-size: 1.25rem;
-    }
-  }*/
-
 .fun{
     width: 100%;
     padding: 5% ;
@@ -254,12 +223,26 @@ width: inherit;
     background: linear-gradient(#c84e87, #ffdb63);  
     width: 100%;
     height:100vh; 
+    vertical-align: middle;
+}
+
+.funContent{
+    padding: 5%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .fun h1{
-    font-size: 120px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Righteous';
+    font-size: 7vh;
     text-align: center;
+
+}
+.fun p {
+    font-family: 'Lexend Deca';
+    font-size: x-large;
+    text-align: center;
+
 }
 
 .circles{
@@ -379,7 +362,6 @@ width: inherit;
 
 
 @keyframes animate {
-
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
@@ -391,5 +373,4 @@ width: inherit;
         opacity: 0;
         border-radius: 50%;
     }
-
 }
