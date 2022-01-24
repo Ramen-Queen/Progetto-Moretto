@@ -52,7 +52,7 @@ body {
 }
 .presentation H1{
     font-family: 'Righteous';
-    font-size: 10vh;
+    font-size: 12vh;
     position: relative;
     color: #f5f5f5;
 }
@@ -147,15 +147,67 @@ a:hover {
 }
 
 .whatIdo{
-    height: auto;
+    height: 200vh;
+    padding-top: 25%;
+    padding-bottom: 10%;
     
 }
 .whatIdo .title{
     text-align: center;
     font-size: 7vh;
     padding-top: 10vh;
-    padding-bottom: 10vh;
     font-family: 'Righteous';
+}
+
+.happy{
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 40vh;
+    animation: flicker 3s infinite alternate; 
+    text-align: center;
+    text-shadow:-10px 10px 0px #f57975,
+    -20px 20px 0px #cf3f87,
+    -30px 30px 0px #741d45;
+    margin-top: -7%;
+
+}
+.happy:hover{
+    animation-name: shuffle;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shuffle{
+    0%{
+        color: #ffffff;
+        text-shadow:-10px 10px 0px #f57975,
+        -20px 20px 0px #cf3f87,
+        -30px 30px 0px #741d45;
+    }
+    25%{
+        color: #f57975;
+        text-shadow:-10px 10px 0px #cf3f87,
+        -20px 20px 0px #741d45,
+        -30px 30px 0px #ffffff;
+    }
+    50%{
+        color: #cf3f87;
+        text-shadow:-10px 10px 0px #741d45,
+        -20px 20px 0px #ffffff,
+        -30px 30px 0px #f57975;
+    }
+    75%{
+        color: #741d45;
+        text-shadow:-10px 10px 0px #ffffff,
+        -20px 20px 0px #f57975,
+        -30px 30px 0px #cf3f87;
+    }
+    100%{
+        color: #ffffff;
+        text-shadow:-10px 10px 0px #f57975,
+        -20px 20px 0px #cf3f87,
+        -30px 30px 0px #741d45;
+    }
 }
 
 .AVStuff{
@@ -196,7 +248,7 @@ a:hover {
 
 #curveDownColor path {
     fill: #102542;
-    stroke: #173a6b;
+    stroke: #102542;
   }
 
 
@@ -255,11 +307,11 @@ width: inherit;
     opacity: 1;
 }
 .color-1{
-    fill:#96c2ff; 
+    fill:#ce4a8c; 
     opacity:0.50;
 }
 .color-2{
-    fill:#4a9ece;
+    fill:#96c2ff;
     opacity:0.5;
 }
 
@@ -275,7 +327,7 @@ width: inherit;
 
 .funContent{
     display: inline-block;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -284,8 +336,16 @@ width: inherit;
     font-family: 'Righteous';
     font-size: 10vh;
     text-align: center;
-
 }
+
+
+.leftLine{
+    border: 3px solid black;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
 .fun p {
     font-family: 'Lexend Deca';
     font-size: x-large;
@@ -317,7 +377,7 @@ width: inherit;
 }
 
 .circles li:nth-child(1){
-    left: 25%;
+    left: 25%; 
     width: 0%;
     height: 0%;
     animation-delay: 0s;
