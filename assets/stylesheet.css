@@ -93,8 +93,7 @@ body {
     left: 12vw;
 }
 
-
-
+/*--------------LANDING END---------------*/
 
 .aboutMe{
     position: relative;
@@ -139,24 +138,36 @@ a:hover {
 
 .path1{
     fill:#173a6b;
-    
 }
 
 .path2{
     fill: #102542;
 }
 
+/*------------ABOUT ME END---------*/
+
 .whatIdo{
     height: 200vh;
-    padding-top: 25%;
-    padding-bottom: 10%;
-    
+    position:relative;
+    display: grid;
 }
+.vlup {
+    border-left: 6px solid #f77d79;
+    height:70vh;
+    position:absolute;
+    top: 0;
+    right: 50%;
+  }
+.widcontent{
+    margin-top: 75vh;
+    position: relative;
+}
+
 .whatIdo .title{
     text-align: center;
     font-size: 7vh;
-    padding-top: 10vh;
     font-family: 'Righteous';
+    position: relative;
 }
 
 .happy{
@@ -167,10 +178,10 @@ a:hover {
     text-align: center;
     text-shadow:-10px 10px 0px #f57975,
     -20px 20px 0px #cf3f87,
-    -30px 30px 0px #741d45;
+    -30px 30px 0px #b32366;
     margin-top: -7%;
-
 }
+
 .happy:hover{
     animation-name: shuffle;
     animation-duration: 0.5s;
@@ -182,22 +193,22 @@ a:hover {
         color: #ffffff;
         text-shadow:-10px 10px 0px #f57975,
         -20px 20px 0px #cf3f87,
-        -30px 30px 0px #741d45;
+        -30px 30px 0px #b32366;
     }
     25%{
         color: #f57975;
         text-shadow:-10px 10px 0px #cf3f87,
-        -20px 20px 0px #741d45,
+        -20px 20px 0px #b32366,
         -30px 30px 0px #ffffff;
     }
     50%{
         color: #cf3f87;
-        text-shadow:-10px 10px 0px #741d45,
+        text-shadow:-10px 10px 0px #b32366,
         -20px 20px 0px #ffffff,
         -30px 30px 0px #f57975;
     }
     75%{
-        color: #741d45;
+        color: #b32366;
         text-shadow:-10px 10px 0px #ffffff,
         -20px 20px 0px #f57975,
         -30px 30px 0px #cf3f87;
@@ -206,11 +217,35 @@ a:hover {
         color: #ffffff;
         text-shadow:-10px 10px 0px #f57975,
         -20px 20px 0px #cf3f87,
-        -30px 30px 0px #741d45;
+        -30px 30px 0px #b32366;
     }
 }
 
+.vldown {
+    border-left: 6px solid #f77d79;
+    height: 70vh;
+    position:absolute;
+    bottom: 0;
+    right: 49.6%;
+  }
+
+  .bookbottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 115px;  
+    fill:#f77d79 ;
+  }
+
+  /*-------------WHAT I DO END -----------------*/
+
 .AVStuff{
+    background-color:#f77d79;
+    position: relative;
     display: inline-block;
     vertical-align: middle;
     width: 100%;
@@ -218,6 +253,7 @@ a:hover {
     padding-top: 5%;
     padding-bottom: 5%;
 }
+
 .AVtxt{
     width: 50%;
     position: absolute;
@@ -226,14 +262,17 @@ a:hover {
     padding-right: 5%;
     padding-top: 10%;
 }
+
 .AVtxt h1{
     font-family: 'Righteous';
     font-size: xx-large;
 }
+
 .AVtxt p {
     font-family: 'Lexend Deca';
     font-size: x-large;
 }
+
 .AVimg{
     position: relative;
     width: 50%;
@@ -243,22 +282,32 @@ a:hover {
 }
 
 .carousel-item img{
-
 }
 
-#curveDownColor path {
-    fill: #102542;
-    stroke: #102542;
-  }
+/*-------------AV STUFF END-------------*/
 
+
+.rounddivider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 92px;
+    fill: #f77d79;
+}
 
 
 .webD{
     position: relative;
+
     display: inline-block;
     vertical-align: middle;
-    height: 75vh;
+    height: 100vh;
     background-color: #102542;
+    padding-top: 5%;
 }
 
 .WDtxt{
@@ -293,43 +342,33 @@ a:hover {
 width: inherit;
 }
 
-#Waves{
+.waves{
     position:absolute;
     top: 0%;
     left: 0%;
     width: 100%;
     z-index: 2;
+    fill: #102542;
 }
-.bottom-bg{
-    height: 50%;
-    width: 100%;
-    fill:#102542; 
-    opacity: 1;
-}
-.color-1{
-    fill:#ce4a8c; 
-    opacity:0.50;
-}
-.color-2{
-    fill:#96c2ff;
-    opacity:0.5;
-}
+
+/*---------------WEB DESIGN END-------------*/
 
 .fun{
     width: 100%;
     padding: 5% ;
     position: relative;
-    background: linear-gradient(#c84e87, #ffdb63);  
+    background: linear-gradient(#c84e87, #ff8f63);  
     width: 100%;
     height:100vh; 
-
 }
 
 .funContent{
     display: inline-block;
-    padding-top: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #102542;
+    z-index: 999;
 }
 
 .fun h1{
@@ -362,6 +401,7 @@ width: inherit;
     width: 100vw;
     height: 100%;
     overflow: hidden;
+    
 }
 
 .circles li{
@@ -373,7 +413,6 @@ width: inherit;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
 }
 
 .circles li:nth-child(1){
