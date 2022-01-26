@@ -150,6 +150,8 @@ a:hover {
     height: 200vh;
     position:relative;
     display: grid;
+    background-image: url("/assets/images/pattern.png");
+    background-repeat: repeat;
 }
 .vlup {
     border-left: 6px solid #f77d79;
@@ -158,7 +160,9 @@ a:hover {
     position:absolute;
     top: 0;
     right: 50%;
+    
   }
+
 .widcontent{
     margin-top: 75vh;
     position: relative;
@@ -230,9 +234,50 @@ a:hover {
     bottom: 0;
     right: 49.6%;
   }
+ /*----------EXTRAS------------*/
+.icecream-mask{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-  
+  .icecream{
+    width: 270px;
+    height: 270px;
+  }
 
+  .ufo-mask{
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+  .ufo{
+    width: 270px;
+    height: 270px;
+  }
+
+.toucan{
+    height: 300px;
+    width: auto;
+    position: absolute;
+    top: 23%;
+    right:14%;
+}
+.ramen{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 50%;
+}
+
+  /*---------EXTRAS END-----------*/
   .bookbottom{
     position: absolute;
     bottom: 0;
