@@ -153,6 +153,7 @@ a:hover {
 }
 .vlup {
     border-left: 6px solid #f77d79;
+    border-radius: 6px;
     height:70vh;
     position:absolute;
     top: 0;
@@ -223,11 +224,14 @@ a:hover {
 
 .vldown {
     border-left: 6px solid #f77d79;
+    border-radius: 6px;
     height: 70vh;
     position:absolute;
     bottom: 0;
     right: 49.6%;
   }
+
+  
 
   .bookbottom{
     position: absolute;
@@ -282,6 +286,8 @@ a:hover {
 }
 
 .carousel-item img{
+    width: inherit;
+    height: inherit;
 }
 
 /*-------------AV STUFF END-------------*/
@@ -302,12 +308,11 @@ a:hover {
 
 .webD{
     position: relative;
-
     display: inline-block;
     vertical-align: middle;
-    height: 100vh;
+    height: 200vh;
     background-color: #102542;
-    padding-top: 5%;
+    padding-top: 15%;
 }
 
 .WDtxt{
@@ -316,32 +321,93 @@ a:hover {
     float: right;
     padding-left:5%;
     padding-right: 5%;
-    padding-top: 10%;
-    
 }
 .WDtxt h1{
     font-family: 'Righteous';
     font-size: xx-large;
-   /* padding-top: 20%;*/
-   vertical-align: middle;
 }
 .WDtxt p {
     font-family: 'Lexend Deca';
     font-size: x-large;
-    vertical-align: middle;
 }
-.webDslide{
+.webDimg{
     position: relative;
     width: 50%;
     float: left;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 10%;
 }
-.carousel-item img{
-width: inherit;
+.placeholder{
+    width: 400px;
+    height: 300px;
 }
 
+/*---------DIVIDER ESEMPI*/
+
+.exDivider{
+    position: relative;
+    padding: 10%;
+    display: table;
+    width: 100%;
+}
+
+.divPart{
+    display: table-cell;
+    width: 33%;
+}
+
+#hr1{
+    text-align:left;
+    height: 3px;
+}
+.examplesTit{
+    display: table-cell;
+    width: 33%;
+    text-align: center;
+}
+
+#hr2{
+    text-align:left;
+    height: 3px;
+}
+
+#hr2{
+    text-align:right;
+
+}
+
+/*------------SITI-------------*/
+
+.siteDisplay{
+    display: table;
+    width: 100%;
+    height: fit-content;
+    table-layout: fixed;
+    border-spacing: 5%;
+    padding: 0 5%;
+}
+.col{
+    display: table-cell;
+    width: 33%;
+    padding: 1%;
+    align-items: center;
+}
+.col img{
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+.desc{
+    padding-top: 1%;
+    display: block;
+    color: #ffffff;
+    z-index: 999;
+}
+.col:hover{
+    background-color: #173a6b;
+}
+
+/*-----------WAVES DIVIDER------------*/
 .waves{
     position:absolute;
     top: 0%;
@@ -357,17 +423,20 @@ width: inherit;
     width: 100%;
     padding: 5% ;
     position: relative;
-    background: linear-gradient(#c84e87, #ff8f63);  
+    background: linear-gradient(#c84e87, #F3A712);  
     width: 100%;
     height:100vh; 
 }
 
 .funContent{
+    position: relative;
     display: inline-block;
     margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
     background-color: #102542;
+    border-radius: 15px 50px;
+    padding: 0 5%;
     z-index: 999;
 }
 
@@ -375,6 +444,7 @@ width: inherit;
     font-family: 'Righteous';
     font-size: 10vh;
     text-align: center;
+    z-index: inherit;
 }
 
 
@@ -382,6 +452,7 @@ width: inherit;
     border: 3px solid black;
     width: 50%;
     margin-left: 25%;
+    z-index: inherit;
 }
 
 
@@ -389,7 +460,7 @@ width: inherit;
     font-family: 'Lexend Deca';
     font-size: x-large;
     text-align: center;
-
+    z-index: inherit;
 }
 
 .circles{
@@ -401,7 +472,7 @@ width: inherit;
     width: 100vw;
     height: 100%;
     overflow: hidden;
-    
+    z-index: 1;
 }
 
 .circles li{
@@ -413,98 +484,132 @@ width: inherit;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
+    z-index: 1;
 }
 
 .circles li:nth-child(1){
+    position: absolute;
     left: 25%; 
     width: 0%;
     height: 0%;
     animation-delay: 0s;
+    z-index: 1;
 }
 
 
 .circles li:nth-child(2){
+    position: absolute;
     left: 10%;
     width: 0px;
     height: 0px;
     animation-delay: 2s;
     animation-duration: 12s;
+    z-index: 1;
 }
 
 .circles li:nth-child(3){
+    position: absolute;
     left: 70%;
     width: 0px;
     height: 0px;
     animation-delay: 4s;
+    z-index: 1;
 }
 
 .circles li:nth-child(4){
+    position: absolute;
     left: 40%;
     width: 0px;
     height: 0px;
     animation-delay: 0s;
     animation-duration: 18s;
+    z-index: 1;
 }
 
 .circles li:nth-child(5){
+    position: absolute;
     left: 65%;
     width: 0px;
     height: 0px;
     animation-delay: 0s;
+    z-index: 1;
 }
 
 .circles li:nth-child(6){
+    position: absolute;
     left: 75%;
     width: 0px;
     height: 0px;
     animation-delay: 3s;
+    z-index: 1;
 }
 
 .circles li:nth-child(7){
+    position: absolute;
     left: 35%;
     width: 0px;
     height: 0px;
     animation-delay: 7s;
+    z-index: 1;
 }
 
 .circles li:nth-child(8){
+    position: absolute;
     left: 50%;
     width: 0px;
     height: 0px;
     animation-delay: 15s;
     animation-duration: 45s;
+    z-index: 1;
 }
 
 .circles li:nth-child(9){
+    position: absolute;
     left: 20%;
     width: 100px;
     height: 100px;
     animation-delay: 2s;
     animation-duration: 35s;
+    z-index: 1;
 }
 
 .circles li:nth-child(10){
+    position: absolute;
     left: 85%;
     width: 0px;
     height: 0px;
     animation-delay: 0s;
     animation-duration: 11s;
+    z-index: 1;
 }
 
 .circles li:nth-child(11){
-    left: 85%%;
+    position: absolute;
+    left: 45%;
     width: 0px;
     height: 0px;
     animation-delay: 0s;
     animation-duration: 40s;
+    z-index: 1;
 }
 
 .circles li:nth-child(12){
+    position: absolute;
     left: 55%;
     width: 0px;
     height: 0px;
     animation-delay: 0s;
     animation-duration: 22s;
+    z-index: 1;
+}
+.circles li:nth-child(13){
+    position: absolute;
+    left: 60%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 14s;
+    animation-duration: 10s;
+    z-index: 1;
 }
 
 
