@@ -241,6 +241,7 @@ a:hover {
     left: 10%;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: -15px 5px #f77d79;
 }
 
   .icecream{
@@ -254,6 +255,7 @@ a:hover {
     right: 10%;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 5px 15px #f77d79;
 }
 
   .ufo{
@@ -275,6 +277,7 @@ a:hover {
     bottom: 5%;
     left: 5%;
     border-radius: 50%;
+    box-shadow: -15px 5px #f77d79;
 }
 
   /*---------EXTRAS END-----------*/
