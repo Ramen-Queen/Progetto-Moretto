@@ -52,11 +52,11 @@ body {
     font-family: 'Poppins-light', sans-serif;
     color: #F98B88;
     font-size: 6vh;
-
 }
+
 .presentation H1{
     font-family: 'Righteous';
-    font-size: 12vh;
+    font-size: 90px;
     position: relative;
     color: #f5f5f5;
 }
@@ -91,10 +91,10 @@ body {
 
 #arrow{
     transform: scaleX(-1);
-    width: 10vw;
+    width: 160px;
     position: relative;
-    top: 16vh;
-    left: 12vw;
+    top: 110px;
+    left: 180px;
 }
 
 /*--------------LANDING END---------------*/
@@ -109,9 +109,9 @@ body {
 .aboutMe h1{
     text-align: center;
     font-family: 'Righteous';
-    font-size: 10vh;
-    padding-top: 10%;
-    padding-bottom: 10vh;
+    font-size: 90px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .shortly{
@@ -124,7 +124,7 @@ body {
 }
 .shortly {
     text-align: center;
-    font-size: xx-large;
+    font-size: 35px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -240,10 +240,11 @@ a:hover {
  .extras{
      width: 100%;
      height: fit-content;
-     padding: 10% 5%;
+     padding: 100px 50px;
      position: relative;
      display: flex;
      flex-direction: row;
+     align-items: flex-end;
      justify-content: space-around;
  }
  .iceCont{
@@ -277,6 +278,7 @@ a:hover {
 
   .ramenCont{
     display:table-cell;
+    
   }
 
 .ramen{
@@ -316,35 +318,32 @@ a:hover {
     vertical-align: middle;
     width: 100%;
     height: fit-content;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 100px 100px;
 }
-
 .AVtxt{
     width: 50%;
     position: absolute;
     float: left;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10%;
+    padding-right: 100px;
+    padding-top: 50px;
 }
 
 .AVtxt h1{
     font-family: 'Righteous';
-    font-size: xx-large;
+    font-size: 50px;
 }
 
 .AVtxt p {
     font-family: 'Lexend Deca';
-    font-size: x-large;
+    font-size: 25px;
 }
 
 .AVimg{
     position: relative;
     width: 50%;
     float: right;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .carousel-item img{
@@ -372,7 +371,7 @@ a:hover {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    height: 200vh;
+    height: fit-content;
     background-color: #102542;
     padding-top: 15%;
 }
@@ -381,16 +380,16 @@ a:hover {
     position: relative;
     width: 50%;
     float: right;
-    padding-left:5%;
-    padding-right: 5%;
+    padding-left:50px;
+    padding-right: 100px;
 }
 .WDtxt h1{
     font-family: 'Righteous';
-    font-size: xx-large;
+    font-size: 50px;
 }
 .WDtxt p {
     font-family: 'Lexend Deca';
-    font-size: x-large;
+    font-size: 25px;
 }
 .webDimg{
     position: relative;
