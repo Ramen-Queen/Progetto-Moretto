@@ -151,59 +151,49 @@ a:hover {
 /*------------ABOUT ME END---------*/
 
 .whatIdo{
-    height: 220vh;
-    position:relative;
-    display: grid;
+    height: fit-content;
+    position: relative;
+    display: block;
 }
-/*
-.vlup {
-    border-left: 6px solid #f77d79;
-    border-radius: 6px;
-    height:70vh;
-    position:absolute;
-    top: 0;
-    right: 50%;
-  }
-  
-  .vldown {
-    border-left: 6px solid #f77d79;
-    border-radius: 6px;
-    height: 70vh;
-    position:absolute;
-    bottom: 0;
-    right: 49.6%;
-  }*/
 
 .widcontent{
-    margin-top: 30vh;
+    margin-top: 350px;
     position: relative;
+    height: fit-content;
+    display: block;
+}
+.firstpart{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
 }
 .toucan{
     height: 300px;
     width: auto;
     position: absolute;
-    top: -37%;
-    right:14%;
+    top: -210px;
+    right:-110px;
     z-index: 3;
 }
 
 .whatIdo .title{
     text-align: center;
-    font-size: 7vh;
+    font-size: 55px;
     font-family: 'Righteous';
     position: relative;
+    margin-bottom: -100px;
 }
 
 .happy{
     font-family: 'Righteous';
     text-align: center;
-    font-size: 40vh;
+    font-size: 300px;
     animation: flicker 3s infinite alternate; 
     text-align: center;
-    text-shadow:-10px 10px 0px #f57975,
+    text-shadow: -10px 10px 0px #f57975,
     -20px 20px 0px #cf3f87,
     -30px 30px 0px #b32366;
-    margin-top: -7%;
 }
 
 .happy:hover{
@@ -248,17 +238,18 @@ a:hover {
 
  /*----------EXTRAS------------*/
  .extras{
-     display: table;
      width: 100%;
-     position: absolute;
-     bottom: 30vh;
+     height: fit-content;
+     padding: 10% 5%;
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
  }
  .iceCont{
     display:table-cell;
  }
- .ice{
-     margin: 5% 23%;
- }
+
 .icecream-mask{
     border-radius: 50%;
     object-fit: cover;
@@ -273,9 +264,7 @@ a:hover {
   .ufoCont{
     display:table-cell;
   }
-  .abd{
-      margin: 5% 23%;
-  }
+
   .ufo-mask{
     border-radius: 50%;
     object-fit: cover;
@@ -288,7 +277,6 @@ a:hover {
 
   .ramenCont{
     display:table-cell;
-
   }
 
 .ramen{
@@ -296,13 +284,13 @@ a:hover {
     width: 300px;
     border-radius: 50%;
     box-shadow: -15px 5px #f77d79;
-    margin: 5% 23%;
+    text-align: center;
 }
 
 .comment{
     text-align: center;
     font-family: 'Poppins';
-    size: 40px;
+    font-size: 40px;
     padding-top: 5%;
 }
 
@@ -499,47 +487,117 @@ a:hover {
 
 .fun{
     width: 100%;
+    height:fit-content;
     padding: 5% ;
     position: relative;
-    background: linear-gradient(#c84e87, #F3A712);  
-    width: 100%;
-    height:100vh; 
+    background: linear-gradient(#c84e87, #F3A712);
 }
 
-.funContent{
+.cloud{
     position: relative;
-    display: inline-block;
-    margin-top: 15%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #102542;
-    border-radius: 15px 50px;
-    padding: 0 8%;
+    margin-top: 300px;
+    background-color: #ffffff;
+    z-index: 999;
+    width:600px;
+    height:200px;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:200px;
+}
+
+.cloud::after, .cloud::before{
+    content:"";
+    position:absolute;
+    display:inline-block;
+    background:inherit;
+}
+
+.cloud::after{
+    width:300px;
+    height:300px;
+    bottom:70px;
+    right:50px;
+    border-radius: 100%;
+}
+.cloud::before{
+    width:230px;
+    height:180px;
+    bottom: 100px;
+    left:100px;
+    border-radius: 100%;
+}
+
+.cloud h1{
+    color: black;
+    font-family: 'Righteous';
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    top: -55px;
+    z-index: inherit;
+}
+
+/*--------------------------------*/
+
+.cloud2{
+    position: relative;
+    bottom: 0px;
+    left: 650px;
+    background: rgb(255,255,255);
+    width:700px;
+    height:250px;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:200px;
     z-index: 999;
 }
 
-.fun h1{
-    font-family: 'Righteous';
-    font-size: 10vh;
-    text-align: center;
-    z-index: inherit;
+.cloud2::after, .cloud2::before{
+    content:"";
+    position:absolute;
+    display:inline-block;
+    background:inherit;
 }
 
+.cloud2::after{
+    width:350px;
+    height:350px;
+    bottom:65px;
+    right:40px;
+    border-radius: 100%;
 
-.Line{
-    border: 3px solid black;
-    width: 50%;
-    margin-left: 25%;
-    z-index: inherit;
 }
 
+.cloud2::before{
+    width:300px;
+    height:300px;
+    bottom: 65px;
+    right:300px;
+    border-radius: 100%;
+}
 
-.fun p {
+.cloud2 p {
+    color: black;
     font-family: 'Lexend Deca';
-    font-size: x-large;
+    font-size: 22px;
     text-align: center;
-    z-index: inherit;
+    z-index: 999;
 }
+#p1{
+    position: absolute;
+    left: 130px;
+    top: -50px;
+    width: 500px;
+    height: fit-content;
+}
+#p2{
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    width: 600px;
+    height: fit-content;
+
+}
+
+/*------------backgroundcircles------------*/
 
 .circles{
     position: absolute;
