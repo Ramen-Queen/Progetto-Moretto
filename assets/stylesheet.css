@@ -399,8 +399,9 @@ a:hover {
     padding-right: 5%;
 }
 .placeholder{
-    width: 400px;
+    width: 500px;
     height: auto;
+    opacity: 100%;
 }
 
 /*---------DIVIDER ESEMPI-------------*/
