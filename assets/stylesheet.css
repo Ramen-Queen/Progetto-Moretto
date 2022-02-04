@@ -400,7 +400,7 @@ a:hover {
 }
 .placeholder{
     width: 400px;
-    height: 300px;
+    height: auto;
 }
 
 /*---------DIVIDER ESEMPI-------------*/
@@ -486,10 +486,11 @@ a:hover {
 
 .fun{
     width: 100%;
-    height:fit-content;
+    height: 125vh;
     padding: 5% ;
     position: relative;
     background: linear-gradient(#c84e87, #F3A712);
+    display: flex;
 }
 
 .cloud{
@@ -501,6 +502,10 @@ a:hover {
     height:200px;
     box-shadow: 10px 10px rgba(0,0,0,0.2);
     border-radius:200px;
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
 }
 
 .cloud::after, .cloud::before{
@@ -540,13 +545,18 @@ a:hover {
 .cloud2{
     position: relative;
     bottom: 0px;
-    left: 650px;
+    left: 0px;
+    margin-top: 500px;
     background: rgb(255,255,255);
     width:700px;
     height:250px;
     box-shadow: 10px 10px rgba(0,0,0,0.2);
     border-radius:200px;
     z-index: 999;
+    animation-name: floating2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
 }
 
 .cloud2::after, .cloud2::before{
@@ -594,6 +604,29 @@ a:hover {
     width: 600px;
     height: fit-content;
 
+}
+
+@keyframes floating{
+    0% {
+        margin-top:200px;
+    }
+    50%{
+        margin-top: 250px;
+    }
+    100%{
+        margin-top:200px;
+    }
+}
+@keyframes floating2{
+    0% {
+        margin-top:425px;
+    }
+    50%{
+        margin-top: 400px;
+    }
+    100%{
+        margin-top:425px;
+    }
 }
 
 /*------------backgroundcircles------------*/
